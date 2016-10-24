@@ -1,9 +1,9 @@
 //counts down
-module ripple_carry_counter(q, clk, reset);
-	output [3:0] q;
-	input clk, reset;
-	tff tff0(q[0], clk, reset);
-	tff tff1(q[1], q[0], reset);
-	tff tff2(q[2], q[1], reset);
-	tff tff3(q[3], q[2], reset);
+module ripple_carry_counter(q_rcc, clk_rcc, reset_rcc);
+	output [3:0] q_rcc;
+	input clk_rcc, reset_rcc;
+	tff tff0(q_rcc[0], clk_rcc, reset_rcc);
+	tff tff1(q_rcc[1], q_rcc[0], reset_rcc);
+	tff tff2(q_rcc[2], q_rcc[1], reset_rcc);
+	tff tff3(q_rcc[3], q_rcc[2], reset_rcc);
 endmodule
