@@ -1,0 +1,2 @@
+preprocessor defining while compiling not working for me
+iverilog -DMY_FEATURE
